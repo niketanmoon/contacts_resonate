@@ -22,7 +22,7 @@
 
 > 1. `/` which points to the home route
 
-- This route performs a `GET` request to `https://jsonplaceholder.typicode.com/users/` and display the users that we get from the users
+- This route performs a `GET` request to `https://jsonplaceholder.typicode.com/users/` and display the users that we get from the API
 - It also has the **_`search`_** functionality where we can search users with `name`, `username` and `email`.
 
 > 2. `/:id` which points to the details of each user
