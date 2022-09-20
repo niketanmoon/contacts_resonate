@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Getting Started with the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## First thing will be to clone the project
 
-## Available Scripts
+### `git clone https://github.com/niketanmoon/contacts_resonate.git`
 
-In the project directory, you can run:
+## Change the directory to the cloned directory
 
-### `npm start`
+### `cd contacts_resonate`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Install the dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### If you have yarn installed then do `yarn install` otherwise you can also do `npm install`
 
-### `npm test`
+## Run the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn start` or `npm start`
 
-### `npm run build`
+## About the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### The project contains two routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> 1. `/` which points to the home route
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This route performs a `GET` request to `https://jsonplaceholder.typicode.com/users/` and display the users that we get from the users
+- It also has the **_`search`_** functionality where we can search users with `name`, `username` and `email`.
 
-### `npm run eject`
+> 2. `/:id` which points to the details of each user
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Once we click on a user on the home page, it will redirect to the contact details page, where we again make a `GET` request to `https://jsonplaceholder.typicode.com/users/:id` where id is a integer parameter
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Most frequent libraries and components used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `react-router-dom`, `material-ui`, `axios`, `Card`, `Grid`
