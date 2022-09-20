@@ -1,5 +1,7 @@
 # Getting Started with the project
 
+## Live demo [here](https://resonate-test.vercel.app/)
+
 ## First thing will be to clone the project
 
 ### `git clone https://github.com/niketanmoon/contacts_resonate.git`
@@ -22,12 +24,12 @@
 
 > 1. `/` which points to the home route
 
-- This route performs a `GET` request to `https://jsonplaceholder.typicode.com/users/` and display the users that we get from the API
+- This route performs a `GET` request to `[users API](https://jsonplaceholder.typicode.com/users/)` and display the users that we get from the API
 - It also has the **_`search`_** functionality where we can search users with `name`, `username` and `email`.
 
 > 2. `/:id` which points to the details of each user
 
-- Once we click on a user on the home page, it will redirect to the contact details page, where we again make a `GET` request to `https://jsonplaceholder.typicode.com/users/:id` where id is a integer parameter
+- Once we click on a user on the home page, it will redirect to the contact details page, where we again make a `GET` request to `[users/:id](https://jsonplaceholder.typicode.com/users/:id)` where id is a integer parameter
 
 ## Most frequent libraries and components used
 
